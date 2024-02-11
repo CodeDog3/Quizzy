@@ -1,11 +1,11 @@
-import User from "@/app/models/userModel";
+import User from "@/models/userModel";
 import { connectMongoDB } from "@/lib/mongodb";
 import { NextAuthOptions } from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google"
 import bcrypt from 'bcryptjs'
 
- const options: NextAuthOptions = {
+ export const options: NextAuthOptions = {
         providers: [
             GoogleProvider({
                 clientId: process.env.GOOGLE_CLIENT_ID as string,

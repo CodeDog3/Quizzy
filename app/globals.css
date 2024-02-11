@@ -7,3 +7,7 @@
     --mainBlue: #181be7;
     --secondaryBlue: #0b9ce0;
 }
+
+body,html{
+    height:150%;
+}
